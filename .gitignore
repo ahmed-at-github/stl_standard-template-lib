@@ -1,3 +1,5 @@
 .vscode/*
 Vector/vector_init
 vector
+
+.gitignore
