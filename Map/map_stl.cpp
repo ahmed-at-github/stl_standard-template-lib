@@ -28,21 +28,36 @@ int main()
     mp3.emplace(6, "Roman poet Terence"); // in insert() and emplace() there is syntactical difference. while both inserts the key and its element in the map container. If the same key is emplaced/inserted more than once, the map stores the first element only as the map is a container which does not store multiple keys of the same value.
 
     // Accessing elements
-    //[] or at() & find()
+    //[] or at()
     cout << mp2[1] << " " << mp2.at(2) << "\n";
 
+    // Updating elements
+    map<int, string> mp4 = {{1, "Not"}, {2, "today"}, {0, "sorry"}};
+
+    mp4[1] = "yes";
+    mp4.at(1) = "later";
+
+    // Finding elements
     auto it = mp3.find(2); // returns iterator
     cout << it->second << "\n";
 
-    // Updating
-    // Finding
-    // Traversing
-    // Deleting 
-    // Other operations 
+    // Deleting erase()
+    mp4.erase(2);           // bu key
+    mp4.erase(mp4.begin()); // by iterator
 
-    for (auto &p : mp3)
-        cout << p.first << " " << p.second
-             << "\n";
+    // Other operations
+    // size(), empty()
+    cout << mp4.size() <<endl;
+
+    if (mp4.empty())
+        cout << "yes, empty\n";
+    else
+        cout << "nope\n";
+
+    for (auto &p : mp4)
+        cout
+            << p.first << " " << p.second
+            << "\n";
 
     return 0;
 }
