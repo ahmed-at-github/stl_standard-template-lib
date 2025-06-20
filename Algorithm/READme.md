@@ -33,8 +33,12 @@ The std::lower_bound is used to find first element in the given range that is gr
 Syntax
 lower_bound(start, end, val);
 
+The behavior of the lower_bound() is undefined if the array is not sorted 
+
 upper_bound()
 The std::upper_bound is used to find first element in the given range that is greater (>) than the given value.
 
 Syntax
 upper_bound(start, end, val);
+
+The behavior of the upper_bound() is undefined if the array is not sorted 
