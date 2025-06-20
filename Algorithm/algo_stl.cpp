@@ -9,26 +9,7 @@ int main()
 
 /*
 
-// Using generic sort algorithm with the binary predicate greater<int>
-#include<bits/stdc++.h>
-using namespace std;
 
-int main () {
-    int a[1000];
-    for(int i =0; i <1000; i++)
-        a[i] = i;
-
-// sort into ascending order
-    sort(&a[0], &a[1000]);
-
-    random_shuffle(&a[0], &a[1000])
-
-// sort into descending order
-    sort(&a[0], &a[1000], greater<int>)
-
-    return 0;
-
-}
 
 // Using reverse algorithm with string and array
 #include <bits/stdc++.h>
