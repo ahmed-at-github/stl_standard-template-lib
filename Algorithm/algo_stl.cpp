@@ -556,44 +556,7 @@ int main()
 
                     return 0;
 }
-// Using generic binary search, upper_bound, lower_bound and equal_range  algorithm
-#include <bits/stdc++.h>
-using namespace std;
 
-int main()
-{
-    vector<int> v(5);
-    bool found;
-
-    // Initializing
-    int i : for (i = 0; i < 5; i++) v[i] = i;
-
-    // Search for each of the integers
-    for (i = 0; i < 5; i++)
-    {
-        found = binary_search(v.begin(), v.end(), i);
-        assert(found == true);
-    }
-
-    // Try searching for a value that’s not present
-    found = binary_search(v.begin(), v.end(), 9);
-    assert(found == false);
-
-    // Vector v now contains 0 7 7 7 8
-    // Applying upper_bound, lower_bound, equal_range
-    vector<int>::iterator k;
-    k = lower_bound(v.begin(), v.end(), 7);
-    assert(k == v.begin() + 1 && *k == 7)
-
-        k = upper_bound(v.begin(), v.end(), 7);
-    assert(k == v.end() - 1 && *k == 8);
-
-    pair<vector<int>::iterator, vector<int>::iterator> pi = equal_range(v.begin(), v.end(), 7);
-    assert(pi.first == v.begin() + 1);
-    assert(pi.second == v.end() - 1);
-
-    return 0;
-}
 // Using generic merge and inplace_merge algorithm pp150
 #include <bits/stdc++.h>
 using namespace std;
