@@ -34,7 +34,7 @@ int main()
     cout << it2 - arr2.begin() << endl; // returns first occurence of 20 (>=)
     cout << it3 - arr3.begin() << endl; // returns first occurence of 20 (>=)
 
-    cout << it3 - arr3.begin() << endl; // returns first occurence of 20 (>)
+    cout << it4 - arr3.begin() << endl; // returns first occurence of 20 (>)
 
 
     return 0;

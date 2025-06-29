@@ -33,11 +33,13 @@ int main()
 
     // initializing by Array
     int arr[] = {12, 24, 48, 96};
-    int n = sizeof(arr) / sizeo    for (int i = 0; i < v1.size(); i++)
-    {
-        for (int j = 0; j < v1[i].size(); j++)
-            cout << v1[i][j] << " ";
-        cout << endl;f(arr[0]);
+    int n = sizeof(arr) / sizeof(arr[0]);
+    //     for (int i = 0; i < v1.size(); i++)
+    // {
+    //     for (int j = 0; j < v1[i].size(); j++)
+    //         cout << v1[i][j] << " ";
+    //     cout << endl;
+    
     vector<int> v4(arr, arr + n); // The constructor vector<T>(start, end) copies the range [start, end) into the vector.
 
     // Initializing from another vector or any STL container
@@ -94,7 +96,7 @@ int main()
 
 
     print_vector(v4);
-    print_vectorc(v6);
+    print_vector(v6);
 
 
 

@@ -1,8 +1,9 @@
 .vscode/*
+
 Vector/vector_init
 Vector/multi_vector
-vector
-
 Map/map_stl
+Set/set_stl
+Algorithm/binary_search_stl
+Algorithm/sort_stl 
 
-.gitignore

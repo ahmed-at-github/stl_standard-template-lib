@@ -1,6 +1,6 @@
 # STL Algorithm
 
-sort() - vector, array
+### sort() - vector, array
 syntax: sort(first, last, comp)
 
 comp = greater<int>() (descending)
@@ -16,7 +16,7 @@ To provide compatibility, a custom comparator function must follow these rules:
 1. It should take two arguments of the same type as the elements being sorted.
 2. It should return true if the first argument should come before the second; otherwise, it should return false.
 
-binary_search() Syntax
+### binary_search() Syntax
 
     std::binary_search(first, last, k, comp);
 
@@ -27,7 +27,7 @@ comp: Custom comparator. By default, it returns true if k is equal to the curren
 
 Note: Behaviour of binary_search() is undefined if the given range is not sorted as binary search algorithm can only be implemented on sorted data.
 
-lower_bound()
+### lower_bound()
 The std::lower_bound is used to find first element in the given range that is greater than or equal (>=) to the given value.
 
 Syntax
@@ -35,7 +35,7 @@ lower_bound(start, end, val);
 
 The behavior of the lower_bound() is undefined if the array is not sorted 
 
-upper_bound()
+### upper_bound()
 The std::upper_bound is used to find first element in the given range that is greater (>) than the given value.
 
 Syntax
